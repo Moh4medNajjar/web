@@ -16,7 +16,7 @@ const projectApi = require('./routes/project');
 app.use('/user', userApi) 
 app.use('/task', taskApi) 
 app.use('/comment', commentApi) 
-app.use('/projects', projectApi);
+app.use('/project', projectApi);
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
