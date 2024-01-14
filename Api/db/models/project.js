@@ -3,8 +3,9 @@ const mongoose = require('mongoose');
 const projectSchema = new mongoose.Schema({
   title: { type: String},
   description: String,
-  status: { type: String, enum: ['New', 'In Progress', 'Deadline Close'], default: 'New' },
+  status: { type: String, enum: ['New', 'In Progress', 'Deadline'], default: 'New' },
   category: String,
+  launchDate: Date,
   deadlineDate: Date,
 });
 
